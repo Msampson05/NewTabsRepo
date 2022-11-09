@@ -15,6 +15,11 @@ function init(){
     imagebtn.onclick = imagebtnOnClick;
 
 
+    let groupImage = document.getElementsByClassName("imageGroup");
+    let imageLength = groupImage.length;
+    for(let i = 0; i < imageLength; i++) {
+        groupImage[i].style.border = "thick solid red";
+    }
 }
 
 function googlebtnOnClick(){
